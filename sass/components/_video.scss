@@ -1,0 +1,50 @@
+.aboutImg{
+  height: 45rem;
+  border-radius: 1rem;
+  overflow: hidden;
+   
+  &__size{
+    height: inherit;
+    width: 20rem; 
+  }
+}
+
+.picture1{
+  background-size: cover;
+  height: inherit;
+  background-image: url("../images/gray-mountain-2098403.jpg");
+}
+
+.picture2{
+  background-size: cover;
+  height: inherit;
+  background-image: url("../images/pic2.jpg");
+}
+
+.picture3{
+  background-size: cover;
+  height: inherit;
+  background-image: url("../images/pic3.jpg");
+}
+
+.main-video{
+  padding-top: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 6rem;
+  
+}
+
+.fitcover{
+  object-fit: cover;
+  margin: auto 5rem;
+  
+}
+ 
+.video{
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: block;
+
+}
+

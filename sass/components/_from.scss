@@ -1,0 +1,38 @@
+.form{
+  padding: 0 5rem; 
+   &__group {
+    margin-bottom:4rem; 
+   }
+ 
+  &__input {
+    font-size: 1.5rem;
+    padding: 1rem 1rem;  
+    border-radius: 2px; 
+    border: none; 
+    letter-spacing: .2rem;
+    width: 100%; 
+    display: block;
+    font-family: inherit; 
+    background-color: #f2f2f2e3;
+    border-bottom: 3px solid transparent;
+  }
+
+  &__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(204, 204, 204, 0.616);
+    border-bottom: 3px solid #55c57a;
+  }
+
+
+   &__label { 
+    font-size: 1.6rem;
+    color: #777; 
+    display: block;
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+   }    
+} 
+
+.book__form{
+  margin: 0 auto; 
+}

@@ -1,0 +1,50 @@
+.signup-login-main{
+  background-color:  #FFFFFF;
+  height: 99.6vh; 
+  flex: 0 0 40%; 
+  display: flex;
+  align-items: center ;
+  flex-direction: column; 
+  justify-content:space-around;
+  position: relative;
+} 
+ 
+.book{
+  background-color: white; 
+  border-radius: .6rem;  
+  margin: 0 auto;
+  align-items: center;
+  box-shadow: 0 1rem 2rem rgba(112, 112, 112, 0.589);  
+
+  &--signup {
+    height: 63rem; 
+    width: 42rem;
+  }
+
+  &--login{
+    height: 40rem; 
+    width: 42rem;
+  }
+} 
+
+.heading--design{
+  padding: 1rem;
+  letter-spacing: .2rem;
+  color:  #55c57a; 
+  text-transform: uppercase; 
+  font-size: 2.6rem;
+ 
+} 
+
+.Main--logo{
+  position: absolute;
+  display: block;  
+  top: 1rem; 
+  left: -8rem; 
+}
+
+.logo--modififier{
+   
+  fill: #616161; 
+  height:7rem;
+}

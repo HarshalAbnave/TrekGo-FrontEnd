@@ -1,0 +1,23 @@
+.footer{
+  height: 60vh;
+  background-color: $color-black;
+  position: relative;
+
+  &__message{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    
+
+    font-size: 1.7rem; 
+    letter-spacing: .4rem;
+    font-weight: 200;
+
+
+    &--heart{
+      color:red;
+      font-size:2.8rem;  
+    }
+  } 
+
+}      

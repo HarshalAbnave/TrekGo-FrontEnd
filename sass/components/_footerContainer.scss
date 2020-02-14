@@ -1,0 +1,134 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  height: 5rem;
+
+  &__leftinfo{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+
+    &--span {
+      margin-top: 5rem;
+      margin-left: 15rem;
+      color: $color-primary;
+      font-size: 1.7rem;
+      font-weight: 300;
+      letter-spacing: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    &--span:after{
+      display: block;
+      content:" ";
+      height: 0.2rem;
+      background-color: aliceblue; 
+      width: 15rem; 
+      margin: 0 auto; 
+      margin-top: 2rem;
+      
+    }
+  }
+
+  &__rightinfo{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+
+    &--span {
+      margin-top: 5rem;
+      margin-right: 15rem; 
+      color: $color-primary;
+      font-size: 1.7rem;
+      font-weight: 300;
+      letter-spacing: 1.6rem; 
+      text-transform: uppercase;
+    }
+
+    &--span:after{
+      display: block;
+      content:" ";
+      height: 0.2rem;
+      background-color: aliceblue; 
+      width: 19rem; 
+      margin: 0 auto; 
+      margin-top: 2rem; 
+    } 
+
+  }
+
+
+}
+
+.leftside-nav{
+  margin-left: 15rem; 
+  margin-top: 3rem; 
+  list-style: none;
+  font-size: 1.4rem;
+
+
+  &--item{
+    transition: all .2s;
+
+    &:hover {
+      transform: translateY(-3px);
+     
+    }
+ 
+  }
+
+  &__link:link,
+  &__link:visited{
+    color: $color-primary;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    font-weight: 200;
+    display: block;
+    padding: 1.5rem 3rem;  
+  }
+ 
+  &__icon{
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: currentColor;
+    margin-right: 2rem; 
+  }
+}
+
+.rightside-nav{ 
+  margin-left:2rem; 
+  margin-top: 3rem; 
+  list-style: none;
+  font-size: 1.4rem;
+
+
+  &--item{
+    transition: all .2s;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  
+  }
+
+  &__link:link,
+  &__link:visited{
+    color: $color-primary;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    font-weight: 200;
+    display: block;
+    padding: 1.5rem 3rem;  
+  }
+
+  &__icon{
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: currentColor;
+    margin-right: 2rem; 
+  }
+ 
+}

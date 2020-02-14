@@ -1,0 +1,23 @@
+.content{ 
+  position: absolute;
+  top: 4rem;
+  left: 85rem;
+} 
+.main-nav{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+  &__item{
+    margin-left: 5.5rem;
+    transition: all .2s;
+    animation: moveInLeft;
+    animation-duration: 3s;
+ 
+    &:hover {
+      transform: translateY(-3px);
+     
+    }
+  }
+}

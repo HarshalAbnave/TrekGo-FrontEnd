@@ -1,0 +1,64 @@
+.card{
+  margin-top: 10rem;
+  background-color:#FFFFFF;  
+  height: 50rem; 
+  width: 35rem; 
+  border-radius: 5px;
+  overflow: hidden;
+  
+
+  //border:1px solid black;
+  box-shadow:0 1.5rem 4rem rgba(0, 0, 0, 0.15); 
+  
+  
+  &__picture{
+
+    background-size: cover;
+    height: 27rem;  
+    background-blend-mode: screen;
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1{
+      background-image:url(../images/rain1.jpg);
+    }
+
+    &--2{
+      background-image: url(../images/card2.jpg);
+    }
+  }
+
+
+  &__details{
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+      color: black;
+
+      li{ 
+          text-align: center;
+          font-size: 1.5rem;
+          letter-spacing: .3rem;
+          font-weight:400;
+          padding: 1rem;
+
+          &:not(:last-child){
+            border-bottom: 1px solid rgb(175, 172, 172); 
+          }
+      }
+    }
+  }
+}   
+
+
+.card{
+  margin-left: 2.3rem;
+} 
+ 
+.getin-center{
+  padding-right:13rem; 
+  //margin-left: -13rem;
+}
