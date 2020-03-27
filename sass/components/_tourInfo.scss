@@ -1,0 +1,68 @@
+.summary{
+  height: 100vh;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 40%; 
+
+  &__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+
+    &-facts{
+      height: 5rem;
+      flex: 0 0 50%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    &-guides{
+      height: 5rem;
+      flex: 0 0 50%;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.overviewbox{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin: 3.2rem;
+  
+  &__icon{
+    height: 2.25rem;
+    width: 2.25rem;
+    fill:#55c57a;
+    margin-left: 13rem;
+  }
+
+  &__label{
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #777;
+  }
+
+  &__text{
+    color: #777;
+    margin-right: 13rem;
+    font-weight: 200;
+  }
+}
+
+.tourImages{
+  height: 30rem;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  &__img{
+    height: 27rem;
+    display: block;
+  }
+}

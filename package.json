@@ -4,9 +4,7 @@
   "description": "front end code",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
-    "compile:sass1": "node-sass sass/main2.scss css2/style2.css -w",
-    "compile:sass2": "node-sass sass/main3.scss css3/style3.css -w"
+    "compile:sass": "node-sass sass/main4.scss css4/style.css -w"
   },
   "author": "harshal",
   "license": "ISC",
