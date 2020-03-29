@@ -1,5 +1,6 @@
 .section-reviews {
-  margin-top: calc(0px - 9vw);
+  //margin-top: calc(0px - 9vw);
+  margin-top: 2rem;
   padding: calc(5rem + 9vw) 0;
   position: relative;
   z-index: 1000;
@@ -23,7 +24,7 @@
     &__card {
       width: 30rem;
       padding: 4rem;
-      background-color: #f7f7f7;
+      background-color:white;
       border-radius: 3px;
       -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -81,9 +82,9 @@
       width: 2rem;
       margin-right: 1px;
     }
-
+ 
     &__star--active {
-      fill: #55c57a;
+      fill: #F48982;
     }
 
     &__star--inactive {

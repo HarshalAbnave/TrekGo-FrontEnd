@@ -11,9 +11,9 @@
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to right bottom,
-     rgba(251, 219, 137, 0.6), 
-     rgba(244, 138, 130, 0.6));
+    #7dd56f, #28b487);
     z-index: 1 ;
+    opacity: 0.4;
  }  
 
   &__section-img{
@@ -37,5 +37,33 @@
      font-weight: 200;
      z-index: 1; 
 
+   }
+
+   &__days{
+    top: 65%; 
+    left: 32%; 
+    transform: translate(-50%,-50%);  
+    font-size: 2rem; 
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300; 
+    z-index: 1;   
+    line-height: 2rem;
+    letter-spacing: 1rem;  
+   }
+
+   &__location{
+    top: 65%; 
+    left: 65%; 
+    transform: translate(-50%,-50%);  
+    font-size: 2rem; 
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300; 
+    z-index: 1;   
+    line-height: 2rem;
+    letter-spacing: 1rem; 
    }
 } 

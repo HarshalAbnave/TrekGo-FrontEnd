@@ -21,75 +21,77 @@
       </section>
 
       <h1 class="header__heading"> the forest hiker</h1>
+      <h6 class="header__days">7 days</h6>
+      <h6 class="header__location">Miami,USA</h6>
     </header>
 
     <section class="summary">
-      <div>
-        <h1 class="summary__tour">About The Sea Explorer tour</h1>
-        <div class="summary__decription">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-          architecto, quibusdam suscipit ipsa voluptas harum veritatis aperiam
-          odit adipisci voluptatibus natus minus ipsum placeat atque aspernatur
-          asperiores earum similique optio.
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
-          quaerat
-          numquam repudiandae ea, veritatis quibusdam at reiciendis aliquam qui
-          laborum possimus dicta quisquam, corrupti maxime! Totam ea sapiente
-          deleniti autem.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta esse
-          assumenda eligendi architecto voluptates, non, itaque error
-          praesentium
-          laudantium, officiis quo nisi ipsa eius repellat temporibus nam
-          impedit
-          ducimus.
-          Minima, maxime earum corporis illum temporibus aut est architecto
-          quaerat optio saepe atque odit, aliquam perspiciatis explicabo. In
-          omnis
-          impedit optio aliquid laudantium, commodi dolore quae, quisquam, sit
-          aspernatur harum?
-          Explicabo soluta quos magnam deserunt est dolores architecto
-          distinctio
-
-        </div>
+      <h1 class="summary__tour">About The Sea Explorer tour</h1>
+      <div class="summary__decription">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+        architecto, quibusdam suscipit ipsa voluptas harum veritatis aperiam
+        odit adipisci voluptatibus natus minus ipsum placeat atque aspernatur
+        asperiores earum similique optio.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto
+        quaerat
+        numquam repudiandae ea, veritatis quibusdam at reiciendis aliquam qui
+        laborum possimus dicta quisquam, corrupti maxime! Totam ea sapiente
+        deleniti autem.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dicta esse
+        assumenda eligendi architecto voluptates, non, itaque error
+        praesentium
+        laudantium, officiis quo nisi ipsa eius repellat temporibus nam
+        impedit
+        ducimus.
+        Minima, maxime earum corporis illum temporibus aut est architecto
+        quaerat optio saepe atque odit, aliquam perspiciatis explicabo. In
+        omnis
+        impedit optio aliquid laudantium, commodi dolore quae, quisquam, sit
+        aspernatur harum?
+        Explicabo soluta quos magnam deserunt est dolores architecto
+        distinctio
       </div>
-      <div class="summary__info">
-        <div class="summary__info-facts">
-          <h1 class="quickFact">Quick facts</h1>
+    </section>
 
-          <div class="overviewbox">
-            <svg class="overviewbox__icon">
-              <use xlink:href="images/sprite.svg#icon-calendar"></use>
-            </svg>
-            <span class="overviewbox__label">Next Date</span>
-            <span class="overviewbox__text">June 2021</span>
-          </div>
-          <div class="overviewbox">
-            <svg class="overviewbox__icon">
-              <use xlink:href="images/sprite.svg#icon-calendar"></use>
-            </svg>
-            <span class="overviewbox__label">Difficulty</span>
-            <span class="overviewbox__text">medium</span>
-          </div>
-          <div class="overviewbox">
-            <svg class="overviewbox__icon">
-              <use xlink:href="images/sprite.svg#icon-calendar"></use>
-            </svg>
-            <span class="overviewbox__label">Participants</span>
-            <span class="overviewbox__text">15 people</span>
-          </div>
-          <div class="overviewbox">
-            <svg class="overviewbox__icon">
-              <use xlink:href="images/sprite.svg#icon-calendar"></use>
-            </svg>
-            <span class="overviewbox__label">Rating</span>
-            <span class="overviewbox__text">4.8 / 5</span>
-          </div>
+    <section class="tourinfo">
+      <div class="container">
+        <div class="rig">
+          <h1 class="quickFact">Quick facts</h1>
+          <section class="container__right--detail">
+            <div class="sb">
+              <span class="sb-l"> Next date</span>
+              <span class="sb-r">June 2021</span>
+            </div>
+            <div class="sb">
+              <span class="sb-l">Difficulty </span>
+              <span class="sb-r">medium</span>
+            </div>
+            <div class="sb">
+              <span class="sb-l">Participants</span>
+              <span class="sb-r">15 people</span>
+            </div>
+            <div class="sb">
+              <span class="sb-l">Rating</span>
+              <span class="sb-r">4.6/5</span>
+            </div>
+          </section>
         </div>
-        <div class="summary__info-guides">
+        <div class="lef">
           <h1 class="guidesInfo">Your tour guides</h1>
+          <section class="container__left--detail">
+            <div class="sb">
+              <span class="sb-l">lead guide</span>
+              <span class="sb-r">harshal</span>
+            </div>
+            <div class="sb">
+              <span class="sb-l">tour guide</span>
+              <span class="sb-r">harshal</span>
+            </div>
+          </section>
         </div>
       </div>
     </section>
+
     <section class="tourImages">
       <div>
         <img src="/images/rain1.jpg" alt="rain1" class="tourImages__img">
@@ -103,15 +105,135 @@
     </section>
 
 
+    <section class="section-map">
+      <div id="map"></div>
+      <script>
+        mapboxgl.accessToken =
+          'pk.eyJ1Ijoiam9uYXNzY2htZWR0bWFubiIsImEiOiJjam54ZmM5N3gwNjAzM3dtZDNxYTVlMnd2In0.ytpI7V7w7cyT1Kq5rT9Z1A';
+
+        const geojson = {
+          type: 'FeatureCollection',
+          features: [
+            {
+              type: 'Feature',
+              geometry: {
+                type: 'Point',
+                coordinates: [-112.987418, 37.198125]
+              },
+              properties: {
+                description: 'Zion Canyon National Park'
+              }
+            },
+            {
+              type: 'Feature',
+              geometry: {
+                type: 'Point',
+                coordinates: [-111.376161, 36.86438]
+              },
+              properties: {
+                description: 'Antelope Canyon'
+              }
+            },
+            {
+              type: 'Feature',
+              geometry: {
+                type: 'Point',
+                coordinates: [-112.115763, 36.058973]
+              },
+              properties: {
+                description: 'Grand Canyon National Park'
+              }
+            },
+            {
+              type: 'Feature',
+              geometry: {
+                type: 'Point',
+                coordinates: [-116.107963, 34.011646]
+              },
+              properties: {
+                description: 'Joshua Tree National Park'
+              }
+            }
+          ]
+        };
+
+        const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/jonasschmedtmann/cjnxfn3zk7bj52rpegdltx58h',
+          scrollZoom: false
+        });
+
+        const bounds = new mapboxgl.LngLatBounds();
+
+        geojson.features.forEach(function(marker) {
+          var el = document.createElement('div');
+          el.className = 'marker';
+
+          new mapboxgl.Marker({
+            element: el,
+            anchor: 'bottom'
+          })
+            .setLngLat(marker.geometry.coordinates)
+            .addTo(map);
+
+          new mapboxgl.Popup({
+            offset: 30,
+            closeOnClick: false
+          })
+            .setLngLat(marker.geometry.coordinates)
+            .setHTML('<p>' + marker.properties.description + '</p>')
+            .addTo(map);
+
+          bounds.extend(marker.geometry.coordinates);
+        });
+
+        map.fitBounds(bounds, {
+          padding: {
+            top: 200,
+            bottom: 150,
+            left: 50,
+            right: 50
+          }
+        });
+
+        map.on('load', function() {
+          map.addLayer({
+            id: 'route',
+            type: 'line',
+            source: {
+              type: 'geojson',
+              data: {
+                type: 'Feature',
+                properties: {},
+                geometry: {
+                  type: 'LineString',
+                  coordinates: [
+                    [-112.987418, 37.198125],
+                    [-111.376161, 36.86438],
+                    [-112.115763, 36.058973],
+                    [-116.107963, 34.011646]
+                  ]
+                }
+              }
+            },
+            layout: {
+              'line-join': 'round',
+              'line-cap': 'round'
+            },
+            paint: {
+              'line-color': '#55c57a',
+              'line-opacity': 0.6,
+              'line-width': 3
+            }
+          });
+        });
+      </script>
+    </section>
+
     <section class="section-reviews">
       <div class="reviews">
         <div class="reviews__card">
           <div class="reviews__avatar">
-            <img
-              src="img/users/user-7.jpg"
-              alt="Jim Brown"
-              class="reviews__avatar-img"
-              />
             <h6 class="reviews__user">Jim Brown</h6>
           </div>
           <p class="reviews__text">
@@ -121,7 +243,7 @@
           </p>
           <div class="reviews__rating">
             <svg class="reviews__star reviews__star--active">
-              <use xlink:href="img/icons.svg#icon-star"></use>
+              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
             </svg>
             <svg class="reviews__star reviews__star--active">
               <use xlink:href="images/sprite.svg#icon-star-empty"></use>
@@ -141,11 +263,6 @@
 
         <div class="reviews__card">
           <div class="reviews__avatar">
-            <img
-              src="img/users/user-7.jpg"
-              alt="Jim Brown"
-              class="reviews__avatar-img"
-              />
             <h6 class="reviews__user">Jim Brown</h6>
           </div>
           <p class="reviews__text">
@@ -155,7 +272,37 @@
           </p>
           <div class="reviews__rating">
             <svg class="reviews__star reviews__star--active">
-              <use xlink:href="img/icons.svg#icon-star"></use>
+              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
+            </svg>
+            <svg class="reviews__star reviews__star--active">
+              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
+            </svg>
+            <svg class="reviews__star reviews__star--active">
+              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
+            </svg>
+            <svg class="reviews__star reviews__star--active">
+              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
+            </svg>
+            <svg class="reviews__star reviews__star--active">
+              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
+            </svg>
+          </div>
+        </div>
+
+
+
+        <div class="reviews__card">
+          <div class="reviews__avatar">
+            <h6 class="reviews__user">Jim Brown</h6>
+          </div>
+          <p class="reviews__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            dignissimos sint quo commodi corrupti accusantium veniam saepe
+            numquam.
+          </p>
+          <div class="reviews__rating">
+            <svg class="reviews__star reviews__star--active">
+              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
             </svg>
             <svg class="reviews__star reviews__star--active">
               <use xlink:href="images/sprite.svg#icon-star-empty"></use>
@@ -174,11 +321,6 @@
 
         <div class="reviews__card">
           <div class="reviews__avatar">
-            <img
-              src="img/users/user-7.jpg"
-              alt="Jim Brown"
-              class="reviews__avatar-img"
-              />
             <h6 class="reviews__user">Jim Brown</h6>
           </div>
           <p class="reviews__text">
@@ -188,7 +330,7 @@
           </p>
           <div class="reviews__rating">
             <svg class="reviews__star reviews__star--active">
-              <use xlink:href="img/icons.svg#icon-star"></use>
+              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
             </svg>
             <svg class="reviews__star reviews__star--active">
               <use xlink:href="images/sprite.svg#icon-star-empty"></use>
@@ -204,109 +346,24 @@
             </svg>
           </div>
         </div>
-
-        <div class="reviews__card">
-          <div class="reviews__avatar">
-            <img
-              src="img/users/user-7.jpg"
-              alt="Jim Brown"
-              class="reviews__avatar-img"
-              />
-            <h6 class="reviews__user">Jim Brown</h6>
-          </div>
-          <p class="reviews__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            dignissimos sint quo commodi corrupti accusantium veniam saepe
-            numquam.
-          </p>
-          <div class="reviews__rating">
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="img/icons.svg#icon-star"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-          </div>
-        </div>
-
-        <div class="reviews__card">
-          <div class="reviews__avatar">
-            <img
-              src="img/users/user-7.jpg"
-              alt="Jim Brown"
-              class="reviews__avatar-img"
-              />
-            <h6 class="reviews__user">Jim Brown</h6>
-          </div>
-          <p class="reviews__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            dignissimos sint quo commodi corrupti accusantium veniam saepe
-            numquam.
-          </p>
-          <div class="reviews__rating">
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="img/icons.svg#icon-star"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-          </div>
-        </div>
-
-        <div class="reviews__card">
-          <div class="reviews__avatar">
-            <img
-              src="img/users/user-7.jpg"
-              alt="Jim Brown"
-              class="reviews__avatar-img"
-              />
-            <h6 class="reviews__user">Jim Brown</h6>
-          </div>
-          <p class="reviews__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            dignissimos sint quo commodi corrupti accusantium veniam saepe
-            numquam.
-          </p>
-          <div class="reviews__rating">
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="img/icons.svg#icon-star"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-            <svg class="reviews__star reviews__star--active">
-              <use xlink:href="images/sprite.svg#icon-star-empty"></use>
-            </svg>
-          </div>
-        </div>
-
       </div>
     </section>
 
+    <section class="buy">
+      <div>
+        <button class="btn btn--green">Book tour now!</button>
+      </div>
+    </section>
 
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Download apps</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <p class="footer__copyright">
+        &copy;All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
